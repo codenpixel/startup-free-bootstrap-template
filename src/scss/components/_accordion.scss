@@ -1,0 +1,47 @@
+.accordion_style_1 {
+    .card {
+        border-color: $border-color;
+        border-radius: 3px;
+        position: relative;
+        margin-bottom: 20px;
+
+        .title {
+            padding: 15px 70px 15px 20px;
+            position: relative;
+            border-radius: 0.235rem;
+            color: #141414;
+
+            &[aria-expanded=true] {
+                margin-bottom: 15px;
+                border-bottom: 1px solid $border-color;
+            }
+        }
+
+        span.arrow {
+            border-left: 1px solid $border-color;
+            color: inherit;
+            height: 100%;
+            padding: 16px 22px 0;
+            position: absolute;
+            right: 0;
+            display: block;
+            top: 0;
+            z-index: 1;
+        }
+    }
+
+    p.card-body {
+        padding-left: 22px;
+        padding-right: 70px;
+        float: right;
+        padding-top: 20px;
+        margin-top: -5px;
+        color: inherit;
+    }
+
+    .main_card > img {
+        height: 100px;
+        width: 100px;
+        margin-left: 22px;
+    }
+}
